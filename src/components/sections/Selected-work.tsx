@@ -9,6 +9,7 @@ import {
   Menu,
   MoveUpRight,
 } from "lucide-react";
+import TalkToUsWpBtn from "../layout/TalkToUsWpBtn";
 
 const projects = [
   {
@@ -198,16 +199,14 @@ function WorkspaceConcept() {
               (item, index) => (
                 <div key={item} className="flex items-center gap-2">
                   <span
-                    className={`size-1.5 ${
-                      index === 0 ? "bg-[#2563eb]" : "bg-[#d0d4dc]"
-                    }`}
+                    className={`size-1.5 ${index === 0 ? "bg-[#2563eb]" : "bg-[#d0d4dc]"
+                      }`}
                   />
                   <span
-                    className={`text-[9px] ${
-                      index === 0
+                    className={`text-[9px] ${index === 0
                         ? "font-medium text-[#2563eb]"
                         : "text-[#818795]"
-                    }`}
+                      }`}
                   >
                     {item}
                   </span>
@@ -508,13 +507,7 @@ export default function SelectedWork() {
             </p>
           </div>
 
-          <Link
-            href="/contact"
-            className="inline-flex min-h-11 w-fit shrink-0 items-center gap-2 text-sm font-medium text-[#101828] transition-colors hover:text-[#2563eb] focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2563eb] focus-visible:ring-offset-4 focus-visible:ring-offset-[#f7f6f2]"
-          >
-            Discuss your project
-            <ArrowRight aria-hidden="true" className="size-4" />
-          </Link>
+          <TalkToUsWpBtn />
         </div>
       </div>
     </section>

@@ -4,6 +4,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { ArrowUpRight, Menu, X } from "lucide-react";
+import PrimaryBtn from "./PrimaryBtn";
 
 const navigation = [
   { label: "Services", href: "/services" },
@@ -38,19 +39,18 @@ export function Header() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 transition-[background-color,border-color,backdrop-filter] duration-300 ${
-        scrolled
+      className={`fixed inset-x-0 top-0 z-50 transition-[background-color,border-color,backdrop-filter] duration-300 ${scrolled
           ? "border-b border-slate-200/70 bg-[#F7F6F2]/90 backdrop-blur-xl"
           : "border-b border-transparent bg-transparent"
-      }`}
+        }`}
     >
-      <div className="mx-auto flex h-[76px] max-w-[1440px] items-center justify-between px-5 sm:px-8 lg:px-14">
+      <div className="mx-auto flex h-19 max-w-360 items-center justify-between px-5 sm:px-8 lg:px-14">
         <Link
           href="/"
           aria-label="Zyncode home"
-          className="relative z-10 text-[25px] font-bold tracking-[-1.5px] text-[#101828]"
+          className="relative z-10 text-[25px] font-bold tracking-[-1.5px] text-ink"
         >
-          zyncode<span className="text-[#2563EB]">.</span>
+          zyncode<span className="text-brand">.</span>
         </Link>
 
         <nav
@@ -61,7 +61,7 @@ export function Header() {
             <Link
               key={item.label}
               href={item.href}
-              className="text-[13px] font-medium text-[#475467] transition-colors hover:text-[#2563EB]"
+              className="text-[13px] font-medium text-[#475467] transition-colors hover:text-brand"
             >
               {item.label}
             </Link>
@@ -70,7 +70,7 @@ export function Header() {
 
         <Link
           href="/contact"
-          className="hidden items-center gap-2 rounded-full bg-[#101828] px-5 py-3 text-[12px] font-semibold text-white transition-colors hover:bg-[#2563EB] sm:inline-flex"
+          className="hidden items-center gap-2 rounded-full bg-ink px-5 py-3 text-[12px] font-semibold text-white transition-colors hover:bg-brand sm:inline-flex"
         >
           Discuss your project
           <ArrowUpRight size={15} aria-hidden="true" />
@@ -82,7 +82,7 @@ export function Header() {
           aria-expanded={menuOpen}
           aria-controls="mobile-navigation"
           onClick={() => setMenuOpen((open) => !open)}
-          className="relative z-10 inline-flex size-10 items-center justify-center rounded-full border border-slate-200 text-[#101828] md:hidden"
+          className="relative z-10 inline-flex size-10 items-center justify-center rounded-full border border-slate-200 text-ink md:hidden"
         >
           {menuOpen ? <X size={19} /> : <Menu size={19} />}
         </button>
@@ -99,20 +99,13 @@ export function Header() {
                 key={item.label}
                 href={item.href}
                 onClick={() => setMenuOpen(false)}
-                className="border-b border-slate-200/80 py-4 text-base font-medium text-[#101828]"
+                className="border-b border-slate-200/80 py-4 text-base font-medium text-ink"
               >
                 {item.label}
               </Link>
             ))}
 
-            <Link
-              href="/contact"
-              onClick={() => setMenuOpen(false)}
-              className="mt-5 inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#101828] px-5 text-sm font-semibold text-white"
-            >
-              Discuss your project
-              <ArrowUpRight size={16} aria-hidden="true" />
-            </Link>
+            <PrimaryBtn />
           </nav>
         </div>
       )}

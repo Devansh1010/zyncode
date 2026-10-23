@@ -7,6 +7,8 @@ import {
   Check,
   Menu,
 } from "lucide-react";
+import PrimaryBtn from "../layout/PrimaryBtn";
+import ExploreWorkBtn from "../layout/ExploreWorkBtn";
 
 function BrowserFrame({
   children,
@@ -211,27 +213,9 @@ export default function HomeHero() {
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3 sm:mt-9">
-            <Link
-              href="/contact"
-              className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-full bg-ink px-6 text-[13px] font-semibold text-white transition-colors duration-200 hover:bg-brand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] focus-visible:ring-offset-2"
-            >
-              Discuss your project
-              <ArrowUpRight
-                size={16}
-                className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-              />
-            </Link>
+            <PrimaryBtn />
 
-            <Link
-              href="/our-work"
-              className="group inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-4 text-[13px] font-semibold text-[#344054] transition-colors hover:text-brand focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] focus-visible:ring-offset-2"
-            >
-              View our work
-              <ArrowDownRight
-                size={16}
-                className="transition-transform group-hover:translate-x-0.5 group-hover:translate-y-0.5"
-              />
-            </Link>
+            <ExploreWorkBtn/>
           </div>
         </div>
 

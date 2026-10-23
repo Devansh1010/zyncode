@@ -4,10 +4,10 @@ function StudioComposition() {
   return (
     <div
       aria-hidden="true"
-      className="relative mx-auto aspect-square w-full max-w-[510px]"
+      className="relative mx-auto aspect-square w-full max-w-127.5"
     >
       {/* Outer frame */}
-      <div className="absolute inset-[7%] rounded-[2rem] border border-[#101828]/10" />
+      <div className="absolute inset-[7%] rounded-[2rem] border border-ink/10" />
 
       {/* Structural grid */}
       <div
@@ -20,20 +20,20 @@ function StudioComposition() {
       />
 
       {/* Main geometric form */}
-      <div className="absolute left-[24%] top-[19%] h-[48%] w-[48%] rotate-[-12deg] rounded-[1.75rem] border border-[#101828]/15 bg-[#F7F6F2] shadow-[0_24px_70px_rgba(16,24,40,0.08)]">
-        <div className="absolute inset-[12%] rounded-[1.25rem] border border-[#101828]/10" />
+      <div className="absolute left-[24%] top-[19%] h-[48%] w-[48%] -rotate-12 rounded-[1.75rem] border border-ink/15 bg-[#F7F6F2] shadow-[0_24px_70px_rgba(16,24,40,0.08)]">
+        <div className="absolute inset-[12%] rounded-[1.25rem] border border-ink/10" />
 
-        <div className="absolute left-[15%] top-[15%] h-3 w-3 rounded-full bg-[#2563EB]" />
+        <div className="absolute left-[15%] top-[15%] h-3 w-3 rounded-full bg-brand" />
 
         <div className="absolute bottom-[17%] left-[15%] right-[15%] space-y-2.5">
-          <div className="h-2 w-[72%] rounded-full bg-[#101828]" />
-          <div className="h-1.5 w-[52%] rounded-full bg-[#101828]/20" />
-          <div className="h-1.5 w-[64%] rounded-full bg-[#101828]/20" />
+          <div className="h-2 w-[72%] rounded-full bg-ink" />
+          <div className="h-1.5 w-[52%] rounded-full bg-ink/20" />
+          <div className="h-1.5 w-[64%] rounded-full bg-ink/20" />
         </div>
       </div>
 
       {/* Electric-blue accent */}
-      <div className="absolute right-[13%] top-[19%] h-[22%] w-[22%] rounded-[1.25rem] bg-[#2563EB] shadow-[0_20px_50px_rgba(37,99,235,0.18)]">
+      <div className="absolute right-[13%] top-[19%] h-[22%] w-[22%] rounded-[1.25rem] bg-brand shadow-[0_20px_50px_rgba(37,99,235,0.18)]">
         <div className="absolute inset-[18%] rounded-full border border-white/35" />
         <div className="absolute inset-[34%] rounded-full border border-white/50" />
         <div className="absolute inset-[44%] rounded-full bg-white" />
@@ -77,12 +77,12 @@ export default function AboutHero() {
             </p>
           </div>
 
-          <h1 className="max-w-[680px] text-4xl font-semibold leading-[1.12] tracking-[-0.055em] text-[#101828] sm:text-5xl md:text-6xl lg:text-[4.5rem]">
+          <h1 className="max-w-170 text-4xl font-semibold leading-[1.12] tracking-[-0.055em] text-[#101828] sm:text-5xl md:text-6xl lg:text-[4.5rem]">
             Technology should move your business{" "}
-            <span className="text-[#2563EB]">forward.</span>
+            <span className="text-brand">forward.</span>
           </h1>
 
-          <p className="mt-7 max-w-xl text-base leading-8 text-[#101828]/65 sm:text-lg sm:leading-9">
+          <p className="mt-7 max-w-xl text-base leading-8 text-ink/65 sm:text-lg sm:leading-9">
             We are an independent digital design and development studio
             creating websites and digital experiences around businesses,
             their audiences, and the problems they need to solve.
@@ -95,7 +95,7 @@ export default function AboutHero() {
             >
               Explore our approach
               <span aria-hidden="true" className="ml-3 text-base">
-                ↓
+                
               </span>
             </Link>
 

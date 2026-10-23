@@ -10,6 +10,7 @@ import {
   PanelsTopLeft,
   Wrench,
 } from "lucide-react";
+import TalkToUsWpBtn from "../layout/TalkToUsWpBtn";
 
 const services = [
   {
@@ -506,16 +507,7 @@ export default function ServiceOverview() {
             and we’ll help you explore the right approach.
           </p>
 
-          <Link
-            href="/contact"
-            className="inline-flex min-h-11 w-fit shrink-0 items-center gap-2 text-sm font-medium text-[#101828] outline-none transition-colors hover:text-[#2563eb] focus-visible:rounded-sm focus-visible:ring-2 focus-visible:ring-[#2563eb] focus-visible:ring-offset-4 focus-visible:ring-offset-[#f7f6f2]"
-          >
-            Discuss your project
-            <ArrowRight
-              aria-hidden="true"
-              className="size-4 transition-transform duration-200 group-hover:translate-x-1 motion-reduce:transform-none"
-            />
-          </Link>
+          <TalkToUsWpBtn />
         </div>
       </div>
     </section>

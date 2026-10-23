@@ -7,6 +7,7 @@ import {
     LayoutGrid,
     MessageCircle,
 } from "lucide-react";
+import PrimaryBtn from "../layout/PrimaryBtn";
 
 const solutions = [
     {
@@ -307,8 +308,8 @@ function WorkflowPreview() {
                                 <div className="flex min-w-0 items-center gap-2">
                                     <span
                                         className={`size-1.5 shrink-0 rounded-full ${index === 0
-                                                ? "bg-[#2563EB]"
-                                                : "bg-[#94A3B8]"
+                                            ? "bg-[#2563EB]"
+                                            : "bg-[#94A3B8]"
                                             }`}
                                     />
                                     <span className="truncate text-[9px] font-medium text-[#344054]">
@@ -472,12 +473,12 @@ export default function SolutionsSection() {
 
                             <h3 className="max-w-[800px] text-[29px] font-medium leading-[1.14] tracking-[-0.045em] text-[#101828] sm:text-[38px] lg:text-[46px]">
                                 The right solution isn&apos;t always a bigger website.{" "}
-                                <span className="font-serif font-normal italic text-[#2563EB]">
+                                <span className="font-serif font-normal italic text-brand">
                                     It&apos;s a better fit for your business.
                                 </span>
                             </h3>
 
-                            <p className="mt-5 max-w-[590px] text-[14px] leading-[1.9] text-[#667085] sm:text-[15px]">
+                            <p className="mt-5 max-w-147.5 text-[14px] leading-[1.9] text-[#667085] sm:text-[15px]">
                                 We start by understanding what you need to achieve, then
                                 recommend an approach that fits your goals, audience, and
                                 requirements.
@@ -485,17 +486,7 @@ export default function SolutionsSection() {
                         </div>
 
                         <div className="lg:pb-1">
-                            <Link
-                                href="/contact"
-                                className="group inline-flex min-h-12 items-center justify-center gap-3 rounded-full bg-[#101828] px-6 text-[13px] font-semibold text-white transition-colors duration-200 hover:bg-[#2563EB] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] focus-visible:ring-offset-2"
-                            >
-                                Discuss your project
-
-                                <ArrowUpRight
-                                    size={16}
-                                    className="transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                                />
-                            </Link>
+                            <PrimaryBtn />
                         </div>
                     </div>
                 </div>
