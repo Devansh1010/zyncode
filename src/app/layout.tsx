@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import { Header } from "@/components/layout/Header";
-import { SiteFooter } from "@/components/layout/site-footer";
+import { SiteFooter } from "@/components/layout/Footer";
 
 
 export const metadata: Metadata = {

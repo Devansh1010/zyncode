@@ -1,13 +1,12 @@
-import Link from "next/link";
 import {
   ArrowDownRight,
-  ArrowRight,
   Check,
   Compass,
   Layers3,
   MessageCircle,
   Rocket,
 } from "lucide-react";
+import PrimaryBtn from "@/components/layout/PrimaryBtn";
 
 const processSteps = [
   {
@@ -142,17 +141,7 @@ export default function HowItWorks() {
             </p>
           </div>
 
-          <Link
-            href="/contact"
-            className="group inline-flex min-h-12 w-fit shrink-0 items-center justify-center gap-3 rounded-full bg-[#101828] px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-[#2563EB] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2563EB] focus-visible:ring-offset-2 focus-visible:ring-offset-[#F7F6F2]"
-          >
-            Discuss your project
-
-            <ArrowRight
-              aria-hidden="true"
-              className="size-4 transition-transform group-hover:translate-x-1"
-            />
-          </Link>
+          <PrimaryBtn />
         </div>
       </div>
 

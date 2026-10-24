@@ -184,7 +184,7 @@ export function SiteFooter() {
                 {/* Bottom bar */}
                 <div className="flex flex-col gap-5 border-t border-border py-6 sm:flex-row sm:items-center sm:justify-between">
                     <p className="text-xs leading-5 text-muted-foreground">
-                        © {new Date().getFullYear()} Zyncode. All rights reserved.
+                        © 2026 Zyncode. All rights reserved.
                     </p>
 
                     <nav aria-label="Legal information">

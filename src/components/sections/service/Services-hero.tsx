@@ -1,11 +1,12 @@
 
-import Link from "next/link";
 import {
   ArrowDown,
   ArrowDownRight,
   ArrowUpRight,
   Check,
 } from "lucide-react";
+import PrimaryBtn from "@/components/layout/PrimaryBtn";
+import ExploreWorkBtn from "@/components/layout/ExploreWorkBtn";
 
 const capabilities = [
   "Business websites",
@@ -154,7 +155,7 @@ function WebsitePreview() {
             <p className="text-[10px] font-semibold text-[#101828]">
               Made for your business
             </p>
-            <p className="mt-0.5 text-[9px] text-[#101828]/50">
+            <p className="mt-0.5 text-[9px] text-ink/50">
               Not a one-size-fits-all solution
             </p>
           </div>
@@ -177,54 +178,36 @@ export default function ServicesHero() {
             <div className="mb-7 flex items-center gap-3">
               <span
                 aria-hidden="true"
-                className="h-px w-8 bg-[#2563EB]"
+                className="h-px w-8 bg-brand"
               />
-              <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#101828]/55">
+              <p className="text-xs font-medium uppercase tracking-[0.2em] text-ink/55">
                 Digital design & development
               </p>
             </div>
 
             <h1
               id="services-hero-heading"
-              className="text-4xl font-medium leading-[1.08] tracking-[-0.05em] text-[#101828] sm:text-5xl md:text-6xl lg:text-[4.5rem] xl:text-[5rem]"
+              className="text-4xl font-medium leading-[1.08] tracking-tighter text-ink sm:text-5xl md:text-6xl lg:text-[4.5rem] xl:text-[5rem]"
             >
               Digital solutions built around{" "}
-              <span className="text-[#2563EB]">your business.</span>
+              <span className="text-brand">your business.</span>
             </h1>
 
-            <p className="mt-7 max-w-xl text-base leading-7 text-[#101828]/65 sm:text-lg sm:leading-8">
+            <p className="mt-7 max-w-xl text-base leading-7 text-ink/65 sm:text-lg sm:leading-8">
               From your first business website to a custom digital platform,
               we design and build experiences that help you communicate your
               value, serve your customers, and move your business forward.
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
-              <Link
-                href="/contact"
-                className="group inline-flex min-h-14 items-center justify-center gap-3 bg-[#2563EB] px-6 py-4 text-sm font-medium text-white transition-colors hover:bg-[#1D4ED8] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#101828]"
-              >
-                Discuss your project
-                <ArrowUpRight
-                  aria-hidden="true"
-                  className="size-4 transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
-                />
-              </Link>
+              <PrimaryBtn />
 
-              <a
-                href="#our-services"
-                className="group inline-flex min-h-14 items-center justify-center gap-2 px-5 py-4 text-sm font-medium text-[#101828] transition-colors hover:text-[#2563EB] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#101828]"
-              >
-                Explore our services
-                <ArrowDown
-                  aria-hidden="true"
-                  className="size-4 transition-transform duration-200 group-hover:translate-y-1"
-                />
-              </a>
+              <ExploreWorkBtn />
             </div>
 
             {/* Service categories */}
-            <div className="mt-12 border-t border-[#101828]/12 pt-5">
-              <p className="mb-3 text-[11px] font-medium uppercase tracking-[0.15em] text-[#101828]/45">
+            <div className="mt-12 border-t border-ink/12 pt-5">
+              <p className="mb-3 text-[11px] font-medium uppercase tracking-[0.15em] text-ink/45">
                 What we help you with
               </p>
 
@@ -232,11 +215,11 @@ export default function ServicesHero() {
                 {capabilities.map((capability) => (
                   <li
                     key={capability}
-                    className="flex items-center gap-2 text-xs text-[#101828]/65 sm:text-sm"
+                    className="flex items-center gap-2 text-xs text-ink/65 sm:text-sm"
                   >
                     <span
                       aria-hidden="true"
-                      className="size-1.5 rounded-full bg-[#2563EB]"
+                      className="size-1.5 rounded-full bg-brand"
                     />
                     {capability}
                   </li>
@@ -252,14 +235,14 @@ export default function ServicesHero() {
         </div>
 
         {/* Bottom scroll cue */}
-        <div className="mt-16 hidden items-center justify-between border-t border-[#101828]/10 pt-5 md:flex">
-          <p className="text-xs text-[#101828]/45">
+        <div className="mt-16 hidden items-center justify-between border-t border-ink/10 pt-5 md:flex">
+          <p className="text-xs text-ink/45">
             The right digital solution starts with understanding your business.
           </p>
 
           <a
             href="#our-services"
-            className="inline-flex items-center gap-2 text-xs font-medium text-[#101828]/60 transition-colors hover:text-[#2563EB] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#101828]"
+            className="inline-flex items-center gap-2 text-xs font-medium text-ink/60 transition-colors hover:text-brand focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink"
           >
             Discover what we do
             <ArrowDown aria-hidden="true" className="size-3.5" />
