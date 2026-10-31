@@ -1,4 +1,4 @@
-import ExploreWorkBtn from "@/components/layout/ExploreWorkBtn";
+import ExploreServicesBtn from "@/components/layout/ExploreServicesBtn";
 
 const processSteps = [
   {
@@ -71,8 +71,8 @@ function ProcessMarker({
             <span
               key={index}
               className={`rounded-xs ${index === 1 || index === 3 || index === 4 || index === 7
-                  ? "bg-brand"
-                  : "border border-ink/20"
+                ? "bg-brand"
+                : "border border-ink/20"
                 }`}
             />
           ))}
@@ -192,7 +192,7 @@ export default function HowWeThink() {
             solve the right problem with the right approach.
           </p>
 
-          <ExploreWorkBtn />
+          <ExploreServicesBtn />
         </div>
       </div>
     </section>

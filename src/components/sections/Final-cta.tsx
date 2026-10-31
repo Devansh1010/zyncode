@@ -1,7 +1,7 @@
 
 import Link from "next/link";
 import {
-  ArrowDownRight,
+  ArrowRight,
   ArrowUpRight,
   Mail,
   MessageCircle,
@@ -136,7 +136,7 @@ export default function FinalCTA() {
                       </span>
                     </span>
 
-                    <ArrowDownRight
+                    <ArrowRight
                       aria-hidden="true"
                       className="size-4 shrink-0 text-white/35 transition-all duration-200 group-hover:translate-x-0.5 group-hover:translate-y-0.5 group-hover:text-white"
                     />

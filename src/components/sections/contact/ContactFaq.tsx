@@ -1,4 +1,4 @@
-import { ArrowUpRight, Plus } from "lucide-react";
+import { ArrowRight, Plus } from "lucide-react";
 import Link from "next/link";
 
 const faqs = [
@@ -21,11 +21,6 @@ const faqs = [
     question: "Can you work with my existing website or application?",
     answer:
       "Yes. We can assess an existing website or application and help with redesign, improvements, new functionality, performance, and ongoing technical support.",
-  },
-  {
-    question: "Do you provide ongoing maintenance and support?",
-    answer:
-      "Yes. We offer ongoing support to help keep websites and applications maintained, secure, updated, and running reliably. The scope depends on your requirements.",
   },
   {
     question: "Can we discuss the project before making a decision?",
@@ -54,18 +49,18 @@ export function ContactFaq() {
           </p>
 
           <Link
-            href="mailto:hello@zyncode.in"
+            href="mailto:contact.zyncode@gmail.com"
             className="group mt-8 inline-flex items-center gap-2 text-sm font-semibold text-ink transition-colors hover:text-brand"
           >
-            Still have questions? Get in touch
-            <ArrowUpRight
+            Still have questions?{" "}Get in touch
+            <ArrowRight
               size={16}
-              className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+              className="transition-transform group-hover:translate-x-0.5"
             />
           </Link>
         </div>
 
-        {/* Right: Questions */}
+        {/* Questions */}
         <div className="border-t border-ink/10">
           {faqs.map((faq, index) => (
             <details

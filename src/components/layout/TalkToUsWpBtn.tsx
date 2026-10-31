@@ -1,12 +1,16 @@
 import { MessageCircle } from "lucide-react";
 
-const TalkToUsWpBtn = () => {
-    const phoneNumber = "919876543210"; 
+const TalkToUsWpBtn = ({
+    msg
+}:{
+    msg?: string
+}) => {
+    const phoneNumber = "917984981183"; 
 
     const message =
         "Hi Zyncode! I'm interested in your website design and development services. I'd love to discuss my project with you.";
 
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(msg ?? message)}`;
 
     return (
         <a

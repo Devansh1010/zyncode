@@ -508,21 +508,25 @@ export function ProblemHeading({
 }: {
   problem: (typeof problems)[number];
 }) {
-  return (<div> <div className="mb-5 flex items-center gap-5"> <span className="font-mono text-sm font-semibold tracking-wide text-brand">
-    {problem.number} </span>
+  return (
+    <div>
+      <div className="mb-5 flex items-center gap-5">
+        <span className="font-mono text-sm font-semibold tracking-wide text-brand">
+          {problem.number}
+        </span>
 
 
-    <span className="h-px w-10 bg-brand/70" />
+        <span className="h-px w-10 bg-brand/70" />
 
-    <span className="text-[9px] font-semibold uppercase tracking-[0.2em] text-[#62645F] sm:text-[10px]">
-      {problem.category}
-    </span>
-  </div>
+        <span className="text-[9px] font-semibold uppercase tracking-[0.2em] text-[#62645F] sm:text-[10px]">
+          {problem.category}
+        </span>
+      </div>
 
-    <h3 className="max-w-125 text-balance font-serif text-[clamp(1.75rem,3vw,2.65rem)] leading-[1.12] tracking-[-0.045em] text-ink">
-      {problem.title}
-    </h3>
-  </div>
+      <h3 className="max-w-125 text-balance font-serif text-[clamp(1.75rem,3vw,2.65rem)] font-normal leading-[1.12] tracking-[-0.045em] text-[#424A56]">
+        {problem.title}
+      </h3>
+    </div>
 
 
   );

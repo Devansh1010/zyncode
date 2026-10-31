@@ -1,15 +1,13 @@
 import Link from "next/link";
 import {
-  ArrowDownRight,
   ArrowRight,
   ArrowUpRight,
-  Check,
   ChevronRight,
   Clock3,
   Menu,
   MoveUpRight,
 } from "lucide-react";
-import TalkToUsWpBtn from "../layout/TalkToUsWpBtn";
+
 
 const projects = [
   {
@@ -57,9 +55,9 @@ function BrowserFrame({
 }) {
   return (
     <div
-      className={`overflow-hidden border border-[#101828]/10 bg-white ${className}`}
+      className={`overflow-hidden border border-ink/10 bg-white ${className}`}
     >
-      <div className="flex h-9 items-center gap-3 border-b border-[#101828]/10 bg-[#fbfbf8] px-3 sm:h-10 sm:px-4">
+      <div className="flex h-9 items-center gap-3 border-b border-ink/10 bg-[#fbfbf8] px-3 sm:h-10 sm:px-4">
         <div className="flex shrink-0 items-center gap-1.5">
           <span className="size-2 rounded-full bg-[#d8d6cf]" />
           <span className="size-2 rounded-full bg-[#d8d6cf]" />
@@ -114,17 +112,17 @@ function HealthcareConcept() {
           </div>
         </header>
 
-        <div className="grid min-h-[230px] grid-cols-2 sm:min-h-[300px]">
+        <div className="grid min-h-57.5 grid-cols-2 sm:min-h-75">
           <div className="flex flex-col items-start justify-center px-4 py-6 sm:px-8 sm:py-10">
             <span className="text-[8px] uppercase tracking-[0.16em] text-[#6f806e] sm:text-[9px]">
               A more personal approach
             </span>
 
-            <h3 className="mt-3 max-w-[260px] font-serif text-xl leading-[1.1] tracking-[-0.045em] text-[#244936] sm:mt-4 sm:text-3xl lg:text-[38px]">
+            <h3 className="mt-3 max-w-65 font-serif text-xl leading-[1.1] tracking-[-0.045em] text-[#244936] sm:mt-4 sm:text-3xl lg:text-[38px]">
               Care that starts with understanding.
             </h3>
 
-            <p className="mt-3 max-w-[220px] text-[9px] leading-relaxed text-[#6c756a] sm:mt-4 sm:text-[11px]">
+            <p className="mt-3 max-w-55 text-[9px] leading-relaxed text-[#6c756a] sm:mt-4 sm:text-[11px]">
               Clear information, a welcoming experience, and care centered
               around you.
             </p>
@@ -182,14 +180,14 @@ function HealthcareConcept() {
  */
 function WorkspaceConcept() {
   return (
-    <div className="overflow-hidden border border-[#101828]/10 bg-white">
-      <div className="flex min-h-[245px] sm:min-h-[290px]">
-        <aside className="hidden w-[24%] shrink-0 border-r border-[#101828]/10 bg-[#f7f8fa] p-4 sm:block">
+    <div className="overflow-hidden border border-ink/10 bg-white">
+      <div className="flex min-h-61.25 sm:min-h-72.5">
+        <aside className="hidden w-[24%] shrink-0 border-r border-ink/10 bg-[#f7f8fa] p-4 sm:block">
           <div className="flex items-center gap-2">
-            <div className="flex size-6 items-center justify-center bg-[#2563eb] text-white">
+            <div className="flex size-6 items-center justify-center bg-brand text-white">
               <Menu className="size-3" />
             </div>
-            <span className="text-[10px] font-semibold text-[#101828]">
+            <span className="text-[10px] font-semibold text-ink">
               Workspace
             </span>
           </div>
@@ -199,13 +197,13 @@ function WorkspaceConcept() {
               (item, index) => (
                 <div key={item} className="flex items-center gap-2">
                   <span
-                    className={`size-1.5 ${index === 0 ? "bg-[#2563eb]" : "bg-[#d0d4dc]"
+                    className={`size-1.5 ${index === 0 ? "bg-brand" : "bg-[#d0d4dc]"
                       }`}
                   />
                   <span
                     className={`text-[9px] ${index === 0
-                        ? "font-medium text-[#2563eb]"
-                        : "text-[#818795]"
+                      ? "font-medium text-brand"
+                      : "text-[#818795]"
                       }`}
                   >
                     {item}
@@ -220,7 +218,7 @@ function WorkspaceConcept() {
           <div className="flex items-center justify-between gap-3">
             <div>
               <p className="text-[9px] text-[#858a95]">WORKSPACE / OVERVIEW</p>
-              <h3 className="mt-1.5 text-sm font-medium tracking-tight text-[#101828] sm:text-base">
+              <h3 className="mt-1.5 text-sm font-medium tracking-tight text-ink sm:text-base">
                 Your work, organized.
               </h3>
             </div>
@@ -231,12 +229,12 @@ function WorkspaceConcept() {
           </div>
 
           <div className="mt-5 grid grid-cols-2 gap-2 sm:gap-3">
-            <div className="border border-[#101828]/10 p-3">
+            <div className="border border-ink/10 p-3">
               <div className="flex items-center gap-1.5 text-[#777f8d]">
                 <Menu className="size-3" />
                 <span className="text-[9px]">Records</span>
               </div>
-              <p className="mt-2 text-xl font-medium tracking-tight text-[#101828]">
+              <p className="mt-2 text-xl font-medium tracking-tight text-ink">
                 128
               </p>
               <p className="mt-1 text-[8px] text-[#858a95]">
@@ -244,12 +242,12 @@ function WorkspaceConcept() {
               </p>
             </div>
 
-            <div className="border border-[#101828]/10 p-3">
+            <div className="border border-ink/10 p-3">
               <div className="flex items-center gap-1.5 text-[#777f8d]">
                 <Clock3 className="size-3" />
                 <span className="text-[9px]">Open tasks</span>
               </div>
-              <p className="mt-2 text-xl font-medium tracking-tight text-[#101828]">
+              <p className="mt-2 text-xl font-medium tracking-tight text-ink">
                 08
               </p>
               <p className="mt-1 text-[8px] text-[#858a95]">
@@ -258,12 +256,12 @@ function WorkspaceConcept() {
             </div>
           </div>
 
-          <div className="mt-4 border border-[#101828]/10">
-            <div className="flex items-center justify-between border-b border-[#101828]/10 px-3 py-2.5">
-              <span className="text-[9px] font-medium text-[#101828]">
+          <div className="mt-4 border border-ink/10">
+            <div className="flex items-center justify-between border-b border-ink/10 px-3 py-2.5">
+              <span className="text-[9px] font-medium text-ink">
                 Recent activity
               </span>
-              <span className="text-[8px] text-[#2563eb]">View records</span>
+              <span className="text-[8px] text-brand">View records</span>
             </div>
 
             {[
@@ -273,7 +271,7 @@ function WorkspaceConcept() {
             ].map(([title, detail]) => (
               <div
                 key={title}
-                className="flex items-center justify-between gap-3 border-b border-[#101828]/[0.06] px-3 py-2.5 last:border-b-0"
+                className="flex items-center justify-between gap-3 border-b border-ink/6 px-3 py-2.5 last:border-b-0"
               >
                 <div className="min-w-0">
                   <p className="truncate text-[9px] font-medium text-[#343b49]">
@@ -300,8 +298,8 @@ function RedesignConcept() {
   return (
     <BrowserFrame address="website-redesign-concept.example">
       <div className="bg-[#f8f7f3]">
-        <div className="flex items-center justify-between border-b border-[#101828]/10 px-4 py-3 sm:px-5">
-          <span className="text-[10px] font-semibold tracking-tight text-[#101828]">
+        <div className="flex items-center justify-between border-b border-ink/10 px-4 py-3 sm:px-5">
+          <span className="text-[10px] font-semibold tracking-tight text-ink">
             STUDIO / BUSINESS
           </span>
 
@@ -312,7 +310,7 @@ function RedesignConcept() {
             <span className="hidden text-[8px] text-[#747770] sm:inline">
               Services
             </span>
-            <div className="bg-[#101828] px-2.5 py-2 text-[8px] text-white">
+            <div className="bg-ink px-2.5 py-2 text-[8px] text-white">
               Get in touch
             </div>
           </div>
@@ -324,22 +322,22 @@ function RedesignConcept() {
               Built around your needs
             </span>
 
-            <h3 className="mt-3 max-w-[220px] text-xl font-medium leading-[1.1] tracking-[-0.055em] text-[#101828] sm:mt-4 sm:text-3xl">
+            <h3 className="mt-3 max-w-55 text-xl font-medium leading-[1.1] tracking-[-0.055em] text-ink sm:mt-4 sm:text-3xl">
               Make your next step clear.
             </h3>
 
-            <p className="mt-3 max-w-[190px] text-[9px] leading-relaxed text-[#73766f] sm:mt-4 sm:text-[10px]">
+            <p className="mt-3 max-w-47.5 text-[9px] leading-relaxed text-[#73766f] sm:mt-4 sm:text-[10px]">
               A clearer story. A more considered experience. A better way to
               connect.
             </p>
 
-            <div className="mt-4 flex items-center gap-2 border-b border-[#2563eb] pb-1.5 text-[9px] font-medium text-[#2563eb] sm:mt-6">
+            <div className="mt-4 flex items-center gap-2 border-b border-brand pb-1.5 text-[9px] font-medium text-brand sm:mt-6">
               Discover what we do
               <ArrowUpRight className="size-3" />
             </div>
           </div>
 
-          <div className="relative m-2 min-h-[180px] overflow-hidden bg-[#e4e7e0] sm:m-4 sm:min-h-[230px]">
+          <div className="relative m-2 min-h-45 overflow-hidden bg-[#e4e7e0] sm:m-4 sm:min-h-57.5">
             <div className="absolute right-[-10%] top-[8%] size-[70%] rounded-full bg-[#c6d2c2]" />
             <div className="absolute bottom-0 left-0 h-[45%] w-full bg-[#d2d9ce]" />
             <div className="absolute bottom-0 left-[17%] h-[65%] w-[29%] bg-[#f8f7f3]" />
@@ -348,7 +346,7 @@ function RedesignConcept() {
           </div>
         </div>
 
-        <div className="grid grid-cols-3 border-t border-[#101828]/10">
+        <div className="grid grid-cols-3 border-t border-ink/10">
           {[
             ["01", "Clear messaging"],
             ["02", "Considered design"],
@@ -356,10 +354,10 @@ function RedesignConcept() {
           ].map(([number, label]) => (
             <div
               key={number}
-              className="border-r border-[#101828]/10 px-3 py-3 last:border-r-0 sm:px-4 sm:py-4"
+              className="border-r border-ink/10 px-3 py-3 last:border-r-0 sm:px-4 sm:py-4"
             >
               <span className="text-[8px] text-[#858a95]">{number}</span>
-              <p className="mt-1.5 text-[8px] font-medium text-[#101828] sm:text-[9px]">
+              <p className="mt-1.5 text-[8px] font-medium text-ink sm:text-[9px]">
                 {label}
               </p>
             </div>
@@ -394,13 +392,13 @@ export default function SelectedWork() {
         {/* Section introduction */}
         <div className="grid gap-6 sm:gap-8 lg:grid-cols-[1fr_0.7fr] lg:items-end">
           <div>
-            <p className="mb-5 text-[11px] font-semibold uppercase tracking-[0.2em] text-[#2563eb]">
+            <p className="mb-5 text-[11px] font-semibold uppercase tracking-[0.2em] text-brand">
               Selected work
             </p>
 
             <h2
               id="selected-work-heading"
-              className="max-w-3xl text-balance text-3xl font-medium leading-[1.1] tracking-[-0.05em] text-[#101828] sm:text-4xl lg:text-[52px]"
+              className="max-w-3xl text-balance text-3xl font-medium leading-[1.1] tracking-tighter text-ink sm:text-4xl lg:text-[52px]"
             >
               Digital experiences, designed with purpose.
             </h2>
@@ -418,7 +416,7 @@ export default function SelectedWork() {
         <article className="mt-10 sm:mt-14 lg:mt-16">
           <Link
             href={featuredProject.href}
-            className="group block outline-none focus-visible:ring-2 focus-visible:ring-[#2563eb] focus-visible:ring-offset-4 focus-visible:ring-offset-[#f7f6f2]"
+            className="group block outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-4 focus-visible:ring-offset-[#f7f6f2]"
             aria-label={`${featuredProject.linkLabel}: ${featuredProject.title}`}
           >
             <div className="overflow-hidden">
@@ -429,11 +427,11 @@ export default function SelectedWork() {
 
             <div className="mt-5 flex flex-col gap-5 sm:mt-7 sm:flex-row sm:items-end sm:justify-between">
               <div className="max-w-2xl">
-                <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-[#2563eb] sm:text-[11px]">
+                <p className="text-[10px] font-medium uppercase tracking-[0.16em] text-brand sm:text-[11px]">
                   {featuredProject.category}
                 </p>
 
-                <h3 className="mt-2.5 text-2xl font-medium tracking-[-0.045em] text-[#101828] sm:text-3xl lg:text-4xl">
+                <h3 className="mt-2.5 text-2xl font-medium tracking-[-0.045em] text-ink sm:text-3xl lg:text-4xl">
                   {featuredProject.title}
                 </h3>
 
@@ -442,7 +440,7 @@ export default function SelectedWork() {
                 </p>
               </div>
 
-              <span className="inline-flex min-h-11 shrink-0 items-center gap-2 self-start text-sm font-medium text-[#101828] transition-colors group-hover:text-[#2563eb] sm:self-auto">
+              <span className="inline-flex min-h-11 shrink-0 items-center gap-2 self-start text-sm font-medium text-ink transition-colors group-hover:text-brand sm:self-auto">
                 {featuredProject.linkLabel}
                 <MoveUpRight
                   aria-hidden="true"
@@ -454,12 +452,12 @@ export default function SelectedWork() {
         </article>
 
         {/* Supporting projects */}
-        <div className="mt-14 grid grid-cols-1 gap-10 border-t border-[#101828]/15 pt-10 sm:mt-16 sm:gap-8 sm:pt-12 md:grid-cols-2 lg:mt-20 lg:gap-10">
+        <div className="mt-14 grid grid-cols-1 gap-10 border-t border-ink/15 pt-10 sm:mt-16 sm:gap-8 sm:pt-12 md:grid-cols-2 lg:mt-20 lg:gap-10">
           {supportingProjects.map((project) => (
             <article key={project.number} className="min-w-0">
               <Link
                 href={project.href}
-                className="group block outline-none focus-visible:ring-2 focus-visible:ring-[#2563eb] focus-visible:ring-offset-4 focus-visible:ring-offset-[#f7f6f2]"
+                className="group block outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-4 focus-visible:ring-offset-[#f7f6f2]"
                 aria-label={`${project.linkLabel}: ${project.title}`}
               >
                 <div className="overflow-hidden">
@@ -469,11 +467,11 @@ export default function SelectedWork() {
                 </div>
 
                 <div className="mt-5">
-                  <p className="text-[10px] font-medium uppercase tracking-[0.15em] text-[#2563eb] sm:text-[11px]">
+                  <p className="text-[10px] font-medium uppercase tracking-[0.15em] text-brand sm:text-[11px]">
                     {project.category}
                   </p>
 
-                  <h3 className="mt-2.5 text-xl font-medium tracking-[-0.04em] text-[#101828] sm:text-2xl">
+                  <h3 className="mt-2.5 text-xl font-medium tracking-[-0.04em] text-ink sm:text-2xl">
                     {project.title}
                   </h3>
 
@@ -481,7 +479,7 @@ export default function SelectedWork() {
                     {project.description}
                   </p>
 
-                  <span className="mt-4 inline-flex min-h-11 items-center gap-2 text-sm font-medium text-[#101828] transition-colors group-hover:text-[#2563eb]">
+                  <span className="mt-4 inline-flex min-h-11 items-center gap-2 text-sm font-medium text-ink transition-colors group-hover:text-brand">
                     {project.linkLabel}
                     <ArrowUpRight
                       aria-hidden="true"
@@ -494,22 +492,8 @@ export default function SelectedWork() {
           ))}
         </div>
 
-        {/* Closing CTA */}
-        <div className="mt-16 flex flex-col gap-5 border-t border-[#101828]/15 pt-8 sm:mt-20 sm:flex-row sm:items-center sm:justify-between sm:pt-10">
-          <div>
-            <h3 className="text-xl font-medium tracking-[-0.035em] text-[#101828] sm:text-2xl">
-              Have something different in mind?
-            </h3>
-
-            <p className="mt-2 max-w-xl text-sm leading-6 text-[#62665f]">
-              Tell us what your business needs, and let’s explore what we can
-              build together.
-            </p>
-          </div>
-
-          <TalkToUsWpBtn />
-        </div>
       </div>
+
     </section>
   );
 }

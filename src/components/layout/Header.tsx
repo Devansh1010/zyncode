@@ -12,6 +12,7 @@ const navigation = [
   { label: "Services", href: "/services" },
   { label: "Work", href: "/our-work" },
   { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export function Header() {

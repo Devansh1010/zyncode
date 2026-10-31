@@ -1,13 +1,11 @@
-// src/components/sections/contact/ContactOptions.tsx
-
 import { ArrowUpRight, Mail, Phone, MessageCircle } from "lucide-react";
 
 const contactMethods = [
   {
     title: "Call us",
     description: "Prefer speaking directly? Give us a call.",
-    value: "+91 98765 43210",
-    href: "tel:+919876543210",
+    value: "+91 7984981183",
+    href: "tel:+917984981183",
     icon: Phone,
     action: "Call now",
   },
@@ -15,15 +13,15 @@ const contactMethods = [
     title: "WhatsApp",
     description: "Have a quick question? Message us.",
     value: "Chat with our team",
-    href: "https://wa.me/919876543210",
+    href: "https://wa.me/917984981183",
     icon: MessageCircle,
     action: "Start a conversation",
   },
   {
     title: "Email",
     description: "Share your requirements in detail.",
-    value: "hello@zyncode.in",
-    href: "mailto:hello@zyncode.in",
+    value: "contact.zyncode@gmail.com",
+    href: "mailto:contact.zyncode@gmail.com",
     icon: Mail,
     action: "Send an email",
   },

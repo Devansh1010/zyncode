@@ -1,173 +1,151 @@
-import { problems } from "@/constants/problem_recognization";
+import { problems } from '@/constants/problem_recognization';
+import { ProblemHeading, ProblemTakeaway, ProblemVisual } from '../ui/home/problem_recognization_ui';
+import TalkToUsWpBtn from '../layout/TalkToUsWpBtn';
+import ExploreWorkBtn from '../layout/ExploreWorkBtn';
 
-import { ProblemHeading, ProblemTakeaway, ProblemVisual } from "../ui/home/problem_recognization_ui";
+export default function ProblemRecognitionSection({
 
-import ExploreWorkBtn from "../layout/ExploreWorkBtn";
-import TalkToUsWpBtn from "../layout/TalkToUsWpBtn";
-
-export default function ProblemRecognition() {
-  return (<section
-    aria-labelledby="problem-recognition-title"
-    className="relative overflow-hidden bg-[#F7F6F2] text-ink"
-  >
-    {/* Opening statement */} <div className="mx-auto max-w-360 px-5 pb-12 pt-20 sm:px-8 sm:pb-16 sm:pt-28 lg:px-12 lg:pb-20 lg:pt-32"> <div className="mx-auto max-w-200 text-center"> <div className="mb-6 inline-flex items-center gap-2.5"> <span className="h-px w-6 bg-brand/70" />
-
-
-      <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#62645F] sm:text-[11px]">
-        Does this sound familiar?
-      </span>
-
-      <span className="h-px w-6 bg-brand/70" />
-    </div>
-
-      <h2
-        id="problem-recognition-title"
-        className="text-balance text-[clamp(2.5rem,5.7vw,5rem)] font-medium leading-[1.03] tracking-[-0.065em] text-ink"
-      >
-        You&apos;ve built something valuable.
-        <span className="mt-2 block font-serif font-normal italic tracking-[-0.055em] text-brand">
-          Does your digital experience show it?
-        </span>
-      </h2>
-
-      <p className="mx-auto mt-7 max-w-145 text-pretty text-sm leading-7 text-[#62645F] sm:mt-8 sm:text-base sm:leading-8">
-        Your website is often where potential customers decide whether to trust your business, understand your offering, and take the next step. If that experience is unclear or frustrating, valuable opportunities can be lost.
-      </p>
-    </div>
-    </div>
-
-    {/* Editorial problem 01 */}
-    <div className="border-t border-[#EAE8E2]/70">
-      <div className="mx-auto grid max-w-360 grid-cols-1 items-center gap-8 px-5 py-12 sm:px-8 sm:py-16 md:grid-cols-2 md:gap-10 lg:gap-16 lg:px-12 lg:py-20">
-        <div className="order-1">
-          <ProblemHeading problem={problems[0]} />
-
-          <p className="mt-5 max-w-115 text-sm leading-7 text-[#62645F] sm:text-[15px]">
-            {problems[0].description}
-          </p>
-
-          <ProblemTakeaway>{problems[0].takeaway}</ProblemTakeaway>
-        </div>
-
-        <div className="order-2 min-w-0">
-          <ProblemVisual type={problems[0].visual} />
-        </div>
-      </div>
-    </div>
-
-    {/* Editorial problem 02 — reversed */}
-    <div className="border-t border-[#EAE8E2]/70">
-      <div className="mx-auto grid max-w-360 grid-cols-1 items-center gap-8 px-5 py-12 sm:px-8 sm:py-16 md:grid-cols-2 md:gap-10 lg:gap-16 lg:px-12 lg:py-20">
-        <div className="order-2 min-w-0 md:order-1">
-          <ProblemVisual type={problems[1].visual} />
-        </div>
-
-        <div className="order-1 md:order-2">
-          <ProblemHeading problem={problems[1]} />
-
-          <p className="mt-5 max-w-115 text-sm leading-7 text-[#62645F] sm:text-[15px]">
-            {problems[1].description}
-          </p>
-
-          <ProblemTakeaway>{problems[1].takeaway}</ProblemTakeaway>
-        </div>
-      </div>
-    </div>
-
-    {/* Editorial problem 03 */}
-    <div className="border-t border-[#EAE8E2]/70">
-      <div className="mx-auto grid max-w-360 grid-cols-1 items-center gap-8 px-5 py-12 sm:px-8 sm:py-16 md:grid-cols-2 md:gap-10 lg:gap-16 lg:px-12 lg:py-20">
-        <div className="order-1">
-          <ProblemHeading problem={problems[2]} />
-
-          <p className="mt-5 max-w-115 text-sm leading-7 text-[#62645F] sm:text-[15px]">
-            {problems[2].description}
-          </p>
-
-          <ProblemTakeaway>{problems[2].takeaway}</ProblemTakeaway>
-        </div>
-
-        <div className="order-2 min-w-0">
-          <ProblemVisual type={problems[2].visual} />
-        </div>
-      </div>
-    </div>
-
-    {/* Editorial problem 04 — reversed */}
-    <div className="border-t border-[#EAE8E2]/70">
-      <div className="mx-auto grid max-w-360 grid-cols-1 items-center gap-8 px-5 py-12 sm:px-8 sm:py-16 md:grid-cols-2 md:gap-10 lg:gap-16 lg:px-12 lg:py-20">
-        <div className="order-2 min-w-0 md:order-1">
-          <ProblemVisual type={problems[3].visual} />
-        </div>
-
-        <div className="order-1 md:order-2">
-          <ProblemHeading problem={problems[3]} />
-
-          <p className="mt-5 max-w-115 text-sm leading-7 text-[#62645F] sm:text-[15px]">
-            {problems[3].description}
-          </p>
-
-          <ProblemTakeaway>{problems[3].takeaway}</ProblemTakeaway>
-        </div>
-      </div>
-    </div>
-
-    {/* Closing Transition — All Services */}
-    <section className="relative overflow-hidden border-t border-[#EAE8E2] bg-[#F7F6F2] px-5 py-16 sm:px-8 sm:py-20 lg:px-12 lg:py-24">
-      {/* Decorative rings */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute -right-24 top-1/2 h-72 w-72 -translate-y-1/2 rounded-full border border-brand/10 sm:h-96 sm:w-96"
-      />
-
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute -right-12 top-1/2 h-52 w-52 -translate-y-1/2 rounded-full border border-brand/10 sm:h-72 sm:w-72"
-      />
-
-      <div className="relative mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1fr_auto] lg:items-end lg:gap-16">
-        {/* Copy */}
+}) {
+  return (
+    <section
+      aria-labelledby="problem-recognition-title"
+      className="relative overflow-hidden bg-[#F7F6F2] py-16 text-ink sm:py-20 lg:py-24"
+    >
+      {/* Header Block */}
+      <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
         <div className="max-w-3xl">
-          <p className="mb-5 text-xs font-semibold uppercase tracking-[0.18em] text-brand">
-            Let&apos;s Find the Right Way Forward
-          </p>
-
-          <h3 className="text-balance font-serif text-[clamp(1.75rem,3.2vw,3rem)] leading-[1.15] tracking-[-0.04em] text-ink">
-            Better digital experiences start with understanding.
-            <span className="text-ink/40">
-              {" "}Your business, your customers, and what needs to change.
+          <div className="mb-4 inline-flex items-center gap-2">
+            <span className="h-2 w-2 rounded-full bg-brand" aria-hidden="true" />
+            <span className="text-xs font-semibold uppercase tracking-widest text-[#62645F]">
+              Local Business Reality Check
             </span>
-          </h3>
+          </div>
 
-          <p className="mt-6 max-w-2xl text-sm leading-7 text-[#74766F] sm:text-base sm:leading-8">
-            Whether you need a new website, a custom application, a more
-            effective existing website, or reliable ongoing support, we
-            start by understanding your goals and challenges. Then we help
-            you identify the right solution for your business.
+          <h2
+            id="problem-recognition-title"
+            className="text-balance text-3xl font-semibold leading-tight tracking-tight text-ink sm:text-4xl lg:text-5xl"
+          >
+            Is your website bringing in real business?
+            <span className="mt-2 block font-serif font-normal italic text-brand">
+              Or are potential customers going elsewhere?
+            </span>
+          </h2>
+
+          <p className="mt-5 max-w-2xl text-base leading-relaxed text-[#62645F] sm:text-lg">
+            Whether visitors are looking for a trusted specialist, evaluating high-value services, or exploring your products, they judge your capability in seconds. A slow, confusing, or outdated digital presence directly drains your growth pipeline.
           </p>
-        </div>
-
-        {/* Actions */}
-        <div className="relative flex flex-col items-start gap-4 sm:flex-row sm:items-center lg:items-stretch">
-          <TalkToUsWpBtn />
-
-          <ExploreWorkBtn />
         </div>
       </div>
 
-      {/* Closing reassurance */}
-      <div className="relative mx-auto mt-12 flex max-w-7xl items-center gap-3 border-t border-ink/10 pt-5 sm:mt-16">
-        <span className="h-px w-6 shrink-0 bg-brand" />
+      {/*  Dynamic Problem Grid */}
+      <div className="mt-12 border-t border-[#EAE8E2]">
+        {problems.slice(0, 4).map((problem, index) => {
+          const isReversed = index % 2 !== 0;
 
-        <p className="text-xs leading-6 text-[#74766F] sm:text-sm">
-          No one-size-fits-all solutions. Just thoughtful digital work shaped
-          around your business needs.
-        </p>
+          return (
+            <div
+              key={index}
+              className="border-b border-[#EAE8E2]/70 bg-white/40 backdrop-blur-sm"
+            >
+              <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 px-5 py-12 sm:px-8 md:grid-cols-2 lg:gap-16 lg:px-12 lg:py-16">
+                {/* Text Content */}
+                <div className={isReversed ? 'order-1 md:order-2' : 'order-1'}>
+                  {/* Category Pill Tag for Quick Context */}
+                  {problem.category && (
+                    <span className="mb-3 inline-block rounded bg-brand/10 px-2.5 py-1 text-xs font-medium text-brand">
+                      {problem.category}
+                    </span>
+                  )}
+
+                  <ProblemHeading problem={problem} />
+
+                  <p className="mt-4 max-w-xl text-sm leading-relaxed text-[#62645F] sm:text-base">
+                    {problem.description}
+                  </p>
+
+                  {/* Left Accent Border replaces blue arrows */}
+                  <div className="mt-6 border-l-2 border-brand/60 pl-4">
+                    <ProblemTakeaway>
+                      {problem.takeaway}
+                    </ProblemTakeaway>
+                  </div>
+                </div>
+
+                {/* Visual Representation */}
+                <div className={isReversed ? 'order-2 min-w-0 md:order-1' : 'order-2 min-w-0'}>
+                  <div className="overflow-hidden rounded-xl border border-[#EAE8E2] bg-white p-2 shadow-sm">
+                    <ProblemVisual type={problem.visual} />
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* Conversion Transition Block */}
+      <div className="mx-auto max-w-7xl px-5 pt-16 sm:px-8 lg:px-12 lg:pt-20">
+        <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end lg:gap-12">
+          {/* Copy & Value Proposition */}
+          <div className="max-w-2xl">
+            <span className="inline-flex items-center gap-2 text-[11px] font-medium uppercase tracking-[0.16em] text-brand">
+              <span className="size-1.5 rounded-full bg-brand" />
+              A better way forward
+            </span>
+
+            <h3 className="mt-4 text-balance font-serif text-[clamp(1.8rem,3vw,2.65rem)] font-normal leading-[1.15] tracking-[-0.035em] text-[#424A56]">
+              Your website should work harder for your business.
+            </h3>
+
+            <p className="mt-4 max-w-xl text-sm leading-7 text-[#62645F] sm:text-base">
+              From improving your existing website to building a custom digital
+              solution, we focus on what your business needs, what your customers
+              expect, and what will help you move forward.
+            </p>
+
+            {/* Key Benefits */}
+            <ul className="mt-6 grid grid-cols-1 gap-x-6 gap-y-3 text-sm font-normal leading-relaxed text-[#62645F] sm:grid-cols-2">
+              <li className="flex items-start gap-2.5">
+                <span className="mt-2 size-1.5 shrink-0 rounded-full bg-brand/70" />
+                Fast, mobile-friendly experiences
+              </li>
+
+              <li className="flex items-start gap-2.5">
+                <span className="mt-2 size-1.5 shrink-0 rounded-full bg-brand/70" />
+                Clear paths to customer enquiries
+              </li>
+
+              <li className="flex items-start gap-2.5">
+                <span className="mt-2 size-1.5 shrink-0 rounded-full bg-brand/70" />
+                Thoughtful design and intuitive navigation
+              </li>
+
+              <li className="flex items-start gap-2.5">
+                <span className="mt-2 size-1.5 shrink-0 rounded-full bg-brand/70" />
+                Practical solutions with ongoing support
+              </li>
+            </ul>
+          </div>
+
+          {/* Actions */}
+          <div className="flex flex-col items-stretch gap-3 sm:flex-row lg:min-w-52.5 ">
+            <TalkToUsWpBtn
+              msg="Hi Zyncode! I came across your website and would like to discuss improving my business's digital presence. I'm looking for the right solution for my business and would appreciate your guidance on the approach, scope, and next steps. Could we connect?"
+            />
+
+            <ExploreWorkBtn />
+          </div>
+        </div>
+
+        {/* Reassurance */}
+        <div className="mt-8 flex items-start gap-3 border-t border-[#EAE8E2] pt-5 text-xs leading-relaxed text-[#73756F] sm:items-center sm:text-sm">
+          <span className="mt-1.5 size-1.5 shrink-0 rounded-full bg-brand/70 sm:mt-0" />
+          <span>
+            A direct conversation with the people doing the work. Clear advice,
+            no unnecessary complexity.
+          </span>
+        </div>
       </div>
     </section>
-  </section>
-
-
   );
 }
-
