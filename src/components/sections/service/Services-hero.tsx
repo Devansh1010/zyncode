@@ -234,20 +234,6 @@ export default function ServicesHero() {
           </div>
         </div>
 
-        {/* Bottom scroll cue */}
-        <div className="mt-16 hidden items-center justify-between border-t border-ink/10 pt-5 md:flex">
-          <p className="text-xs text-ink/45">
-            The right digital solution starts with understanding your business.
-          </p>
-
-          <a
-            href="#our-services"
-            className="inline-flex items-center gap-2 text-xs font-medium text-ink/60 transition-colors hover:text-brand focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink"
-          >
-            Discover what we do
-            <ArrowDown aria-hidden="true" className="size-3.5" />
-          </a>
-        </div>
       </div>
     </section>
   );

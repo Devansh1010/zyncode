@@ -1,41 +1,40 @@
 export const problems = [
-  {
-    number: "01",
-    category: "FIRST IMPRESSIONS",
-    title: "People find you online. But do they see why they should choose you?",
-    description:
-      "You know what makes your business worth choosing. But a new customer hasn't experienced it yet. If your website looks and sounds like everyone else's, your best qualities can go unnoticed.",
-    takeaway: "Your value deserves to be understood before the first conversation.",
-    visual: "positioning",
-  },
-  {
-    number: "02",
-    category: "LOST OPPORTUNITIES",
-    title: "Interested customers shouldn't have to work hard to choose you.",
-    description:
-      "Someone visits your website looking for your services, pricing, or process. If the answers aren't clear and the next step isn't obvious, they may leave without contacting you.",
-    takeaway: "Make it easier for the right customers to take the next step.",
-    visual: "conversion",
-  },
-  {
-    number: "03",
-    category: "BUSINESS GROWTH",
-    title: "Your business has grown. Has your website kept up?",
-    description:
-      "Your services have expanded, your standards have improved, or you're ready for a different kind of customer. But your website still reflects the business you were building years ago.",
-    takeaway: "Your online presence should reflect the business you're building today.",
-    visual: "growth",
-  },
-  {
-    number: "04",
-    category: "EVERYDAY OPERATIONS",
-    title: "You're running a business. You shouldn't have to fight your own systems.",
-    description:
-      "Customer details in spreadsheets. Updates buried in WhatsApp messages. Payments tracked in one place and daily work in another. Disconnected tools make simple tasks harder than they need to be.",
-    takeaway:
-      "The right digital tools can bring your workflows together and give you more control over your day.",
-    visual: "workflow",
-  },
+{
+number: "01",
+category: "POSITIONING",
+title: "Customers don't see what makes you different.",
+description:
+"Your business offers something worth choosing, but your website looks and sounds like many others. Visitors may leave without understanding why they should choose you.",
+takeaway: "LET THEM SEE YOUR VALUE",
+visual: "positioning",
+},
+{
+number: "02",
+category: "CONVERSIONS",
+title: "Your website isn't turning interest into enquiries.",
+description:
+"Visitors may be interested in your services but struggle to find the information they need, build confidence in your business, or figure out what to do next.",
+takeaway: "MAKE IT EASY TO SAY YES",
+visual: "conversion",
+},
+{
+number: "03",
+category: "DIGITAL PRESENCE",
+title: "Your online presence no longer reflects your business.",
+description:
+"Your services, experience, or ambitions have moved forward, but your website still tells an older story. Your digital presence should reflect the business you've built today.",
+takeaway: "SHOW HOW FAR YOU'VE COME",
+visual: "growth",
+},
+{
+number: "04",
+category: "WORKFLOW & OPERATIONS",
+title: "Everyday work is harder than it needs to be.",
+description:
+"Information is scattered across spreadsheets, messages, and disconnected tools. A tailored digital application could bring the right parts of your workflow together.",
+takeaway: "STREAMLINE YOUR OPERATIONS",
+visual: "workflow",
+},
 ] as const;
 
 export type ProblemVisualType = (typeof problems)[number]["visual"];

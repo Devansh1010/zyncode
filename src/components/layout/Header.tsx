@@ -6,6 +6,7 @@ import { Menu, X, ArrowUpRight } from "lucide-react";
 
 import { BrandWordmark } from "./brand-wordmark";
 import { usePathname } from "next/navigation";
+import PrimaryBtn from "./PrimaryBtn";
 
 const navigation = [
   { label: "Services", href: "/services" },
@@ -94,14 +95,14 @@ export function Header() {
                   "text-[15px] font-medium tracking-[-0.015em] lg:text-base",
                   "transition-colors duration-200",
                   isActive
-                    ? "text-[#101828]"
-                    : "text-[#475467] hover:text-[#2563EB]",
+                    ? "text-ink"
+                    : "text-[#475467] hover:text-brand",
                   "after:absolute after:inset-x-0 after:-bottom-0.5",
-                  "after:h-[2px] after:origin-left after:rounded-full",
+                  "after:h-0.5 after:origin-left after:rounded-full",
                   "after:transition-transform after:duration-200",
                   isActive
-                    ? "after:scale-x-100 after:bg-[#2563EB]"
-                    : "after:scale-x-0 after:bg-[#2563EB] hover:after:scale-x-100",
+                    ? "after:scale-x-100 after:bg-brand"
+                    : "after:scale-x-0 after:bg-brand hover:after:scale-x-100",
                   "focus-visible:outline-none focus-visible:ring-2",
                   "focus-visible:ring-[#2563EB] focus-visible:ring-offset-4",
                 ].join(" ")}
@@ -114,27 +115,7 @@ export function Header() {
 
         {/* Desktop CTA */}
         <div className="hidden md:block">
-          <Link
-            href="/contact"
-            className={[
-              "group inline-flex min-h-11 items-center justify-center gap-2",
-              "rounded-full bg-brand px-5 py-2.5",
-              "text-sm font-medium text-white",
-              "transition-all duration-200",
-              "hover:-translate-y-0.5 hover:bg-[#1D4ED8]",
-              "hover:shadow-[0_6px_18px_rgba(37,99,235,0.18)]",
-              "focus-visible:outline-none focus-visible:ring-2",
-              "focus-visible:ring-[#2563EB] focus-visible:ring-offset-4",
-              "lg:px-6 lg:text-[15px]",
-            ].join(" ")}
-          >
-            Let&apos;s talk
-            <ArrowUpRight
-              size={16}
-              strokeWidth={1.8}
-              className="transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-            />
-          </Link>
+          <PrimaryBtn/>
         </div>
 
         {/* Mobile menu button */}

@@ -13,10 +13,6 @@ export default function HomeHero() {
 
       <div className="mx-auto grid min-h-190 max-w-360 grid-cols-1 items-center gap-4 px-5 pb-16 pt-28 sm:px-8 sm:pb-20 sm:pt-32 lg:min-h-205 lg:grid-cols-[0.88fr_1.12fr] lg:gap-6 lg:px-14 lg:pb-20 lg:pt-28">
         <div className="relative z-20 max-w-155 lg:pb-6">
-          <p className="mb-6 flex items-center gap-3 text-[10px] font-semibold uppercase tracking-[0.19em] text-[#475467] sm:mb-8 sm:text-[11px]">
-            <span className="h-px w-7 bg-brand" />
-            Digital design & development
-          </p>
 
           <h1 className="max-w-162.5 text-[clamp(43px,8vw,84px)] font-medium leading-[0.99] tracking-[-0.065em] text-ink text-balance">
             Websites built around your business{" "}
@@ -26,8 +22,7 @@ export default function HomeHero() {
           </h1>
 
           <p className="mt-6 max-w-110 text-[15px] leading-[1.8] text-[#667085] sm:mt-7 sm:text-base">
-            We design and develop digital experiences that help businesses
-            communicate their value, build trust and work smarter.
+           We design and develop business websites that communicate your value, build customer trust, and make it easier for people to choose your business.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3 sm:mt-9">
