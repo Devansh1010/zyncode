@@ -11,7 +11,7 @@ export const solutions = [
       "Guide potential customers towards an enquiry",
     ],
     linkLabel: "Explore business websites",
-    href: "/business-websites",
+    href: "/services/business-websites",
     visual: "clarity",
   },
   {
@@ -26,7 +26,7 @@ export const solutions = [
       "Address usability issues across devices",
     ],
     linkLabel: "Explore website improvements",
-    href: "/website-redesign#website-improvements",
+    href: "/services/website-redesign",
     visual: "journey",
   },
   {
@@ -56,7 +56,7 @@ export const solutions = [
       "Reduce repetitive work where automation helps",
     ],
     linkLabel: "Explore custom applications",
-    href: "/custom-web-application-development",
+    href: "/services/web-applications",
     visual: "workflow",
   },
 ] as const;

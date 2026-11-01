@@ -74,19 +74,19 @@ function ClarityVisual() {
       aria-hidden="true"
       className="relative flex h-28 w-full max-w-44 items-center justify-center"
     >
-      <div className="absolute left-3 top-3 h-20 w-28 border border-[#101828]/10 bg-[#fffefa]" />
+      <div className="absolute left-3 top-3 h-20 w-28 border border-ink/10 bg-[#fffefa]" />
 
-      <div className="relative z-10 w-32 border border-[#101828]/10 bg-[#fffefa] p-3 shadow-[0_8px_24px_rgba(16,24,40,0.06)]">
+      <div className="relative z-10 w-32 border border-ink/10 bg-[#fffefa] p-3 shadow-[0_8px_24px_rgba(16,24,40,0.06)]">
         <div className="mb-3 flex items-center justify-between">
-          <div className="h-1.5 w-8 bg-[#101828]" />
+          <div className="h-1.5 w-8 bg-ink" />
           <div className="flex gap-1">
-            <span className="size-1 rounded-full bg-[#94a3b8]" />
-            <span className="size-1 rounded-full bg-[#94a3b8]" />
+            <span className="size-1 rounded-full bg-subtle" />
+            <span className="size-1 rounded-full bg-subtle" />
           </div>
         </div>
 
-        <div className="h-2 w-full bg-[#101828]" />
-        <div className="mt-1.5 h-2 w-3/4 bg-[#101828]" />
+        <div className="h-2 w-full bg-ink" />
+        <div className="mt-1.5 h-2 w-3/4 bg-ink" />
 
         <div className="mt-3 flex items-center justify-between gap-2">
           <div className="space-y-1">
@@ -94,14 +94,14 @@ function ClarityVisual() {
             <div className="h-1 w-8 bg-[#d8d9d3]" />
           </div>
 
-          <div className="flex size-7 items-center justify-center bg-[#2563eb] text-white">
+          <div className="flex size-7 items-center justify-center bg-brand text-white">
             <ArrowUpRight className="size-3.5" />
           </div>
         </div>
       </div>
 
-      <div className="absolute -right-1 bottom-2 flex items-center gap-1.5 border border-[#101828]/10 bg-[#f7f6f2] px-2 py-1.5">
-        <span className="size-1.5 rounded-full bg-[#2563eb]" />
+      <div className="absolute -right-1 bottom-2 flex items-center gap-1.5 border border-ink/10 bg-[#f7f6f2] px-2 py-1.5">
+        <span className="size-1.5 rounded-full bg-brand" />
         <span className="text-[9px] text-[#62665f]">Clear positioning</span>
       </div>
     </div>
@@ -116,32 +116,32 @@ function JourneyVisual() {
     >
       <div className="flex w-full flex-col gap-2">
         <div className="flex items-center gap-2">
-          <div className="flex size-8 shrink-0 items-center justify-center border border-[#101828]/10 bg-[#fffefa]">
+          <div className="flex size-8 shrink-0 items-center justify-center border border-ink/10 bg-[#fffefa]">
             <PanelsTopLeft className="size-3.5 text-[#62665f]" />
           </div>
 
-          <div className="flex-1 border border-[#101828]/10 bg-[#fffefa] px-2.5 py-2">
-            <div className="h-1.5 w-16 bg-[#101828]" />
+          <div className="flex-1 border border-ink/10 bg-[#fffefa] px-2.5 py-2">
+            <div className="h-1.5 w-16 bg-ink" />
             <div className="mt-1.5 h-1 w-11 bg-[#d8d9d3]" />
           </div>
 
-          <ArrowRight className="size-3.5 shrink-0 text-[#94a3b8]" />
+          <ArrowRight className="size-3.5 shrink-0 text-subtle" />
         </div>
 
-        <div className="ml-5 h-3 w-px bg-[#94a3b8]" />
+        <div className="ml-5 h-3 w-px bg-subtle" />
 
         <div className="flex items-center gap-2">
-          <div className="flex size-8 shrink-0 items-center justify-center border border-[#2563eb]/20 bg-[#e9efff]">
-            <MousePointer2 className="size-3.5 text-[#2563eb]" />
+          <div className="flex size-8 shrink-0 items-center justify-center border border-brand/20 bg-[#e9efff]">
+            <MousePointer2 className="size-3.5 text-brand" />
           </div>
 
-          <div className="flex flex-1 items-center justify-between border border-[#2563eb]/20 bg-[#fffefa] px-2.5 py-2">
+          <div className="flex flex-1 items-center justify-between border border-brand/20 bg-[#fffefa] px-2.5 py-2">
             <div>
-              <div className="h-1.5 w-14 bg-[#101828]" />
+              <div className="h-1.5 w-14 bg-ink" />
               <div className="mt-1.5 h-1 w-9 bg-[#d8d9d3]" />
             </div>
 
-            <Check className="size-3.5 text-[#2563eb]" />
+            <Check className="size-3.5 text-brand" />
           </div>
         </div>
       </div>
@@ -155,21 +155,21 @@ function EvolutionVisual() {
       aria-hidden="true"
       className="relative flex h-28 w-full max-w-44 items-center justify-center gap-3"
     >
-      <div className="w-14 border border-[#101828]/10 bg-[#eceae3] p-2">
+      <div className="w-14 border border-ink/10 bg-[#eceae3] p-2">
         <div className="h-1.5 w-full bg-[#b9b9b0]" />
         <div className="mt-2 h-7 w-full bg-[#d6d4cb]" />
         <div className="mt-2 h-1 w-full bg-[#d6d4cb]" />
         <div className="mt-1 h-1 w-3/4 bg-[#d6d4cb]" />
       </div>
 
-      <div className="flex size-7 shrink-0 items-center justify-center rounded-full border border-[#101828]/10 bg-[#fffefa]">
+      <div className="flex size-7 shrink-0 items-center justify-center rounded-full border border-ink/10 bg-[#fffefa]">
         <ArrowRight className="size-3.5 text-[#62665f]" />
       </div>
 
-      <div className="w-16 border border-[#101828]/10 bg-[#fffefa] p-2 shadow-[0_8px_24px_rgba(16,24,40,0.05)]">
+      <div className="w-16 border border-ink/10 bg-[#fffefa] p-2 shadow-[0_8px_24px_rgba(16,24,40,0.05)]">
         <div className="flex items-center justify-between">
-          <div className="h-1.5 w-5 bg-[#101828]" />
-          <CircleDot className="size-2.5 text-[#2563eb]" />
+          <div className="h-1.5 w-5 bg-ink" />
+          <CircleDot className="size-2.5 text-brand" />
         </div>
 
         <div className="mt-2 h-7 bg-[#dbe4d6]">
@@ -195,30 +195,30 @@ function WorkflowVisual() {
     >
       <div className="grid w-full grid-cols-[1fr_auto_1fr] items-center gap-2">
         <div className="space-y-2">
-          <div className="border border-[#101828]/10 bg-[#fffefa] p-2">
+          <div className="border border-ink/10 bg-[#fffefa] p-2">
             <div className="h-1.5 w-full bg-[#b8bbb3]" />
             <div className="mt-1.5 h-1 w-3/4 bg-[#d8d9d3]" />
           </div>
 
-          <div className="border border-[#101828]/10 bg-[#fffefa] p-2">
+          <div className="border border-ink/10 bg-[#fffefa] p-2">
             <div className="h-1.5 w-3/4 bg-[#b8bbb3]" />
             <div className="mt-1.5 h-1 w-full bg-[#d8d9d3]" />
           </div>
         </div>
 
-        <ArrowRight className="size-4 text-[#2563eb]" />
+        <ArrowRight className="size-4 text-brand" />
 
-        <div className="border border-[#2563eb]/20 bg-[#e9efff] p-2.5">
-          <div className="flex size-7 items-center justify-center bg-[#2563eb] text-white">
+        <div className="border border-brand/20 bg-[#e9efff] p-2.5">
+          <div className="flex size-7 items-center justify-center bg-brand text-white">
             <Workflow className="size-4" />
           </div>
 
-          <div className="mt-2 h-1.5 w-full bg-[#101828]/60" />
-          <div className="mt-1.5 h-1 w-3/4 bg-[#101828]/20" />
+          <div className="mt-2 h-1.5 w-full bg-ink/60" />
+          <div className="mt-1.5 h-1 w-3/4 bg-ink/20" />
         </div>
       </div>
 
-      <div className="absolute -bottom-1 right-0 border border-[#101828]/10 bg-[#f7f6f2] px-2 py-1 text-[9px] text-[#62665f]">
+      <div className="absolute -bottom-1 right-0 border border-ink/10 bg-[#f7f6f2] px-2 py-1 text-[9px] text-[#62665f]">
         Connected workflows
       </div>
     </div>
@@ -254,15 +254,15 @@ export default function SolutionsSection() {
     >
       <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
         {/* Introduction */}
-        <div className="grid gap-6 border-b border-[#101828]/15 pb-10 sm:pb-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-end lg:gap-16">
+        <div className="grid gap-6 border-b border-ink/15 pb-10 sm:pb-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-end lg:gap-16">
           <div>
-            <p className="mb-5 text-[11px] font-semibold uppercase tracking-[0.2em] text-[#2563eb]">
+            <p className="mb-5 text-[11px] font-semibold uppercase tracking-[0.2em] text-brand">
               Better digital experiences
             </p>
 
             <h2
               id="solutions-heading"
-              className="max-w-2xl text-balance text-3xl font-medium leading-[1.12] tracking-[-0.045em] text-[#101828] sm:text-4xl lg:text-[48px]"
+              className="max-w-2xl text-balance text-3xl font-medium leading-[1.12] tracking-[-0.045em] text-ink sm:text-4xl lg:text-[48px]"
             >
               Good digital experiences make business easier.
             </h2>
@@ -276,13 +276,13 @@ export default function SolutionsSection() {
         </div>
 
         {/* Outcome-led editorial rows */}
-        <div className="divide-y divide-[#101828]/15">
+        <div className="divide-y divide-ink/15">
           {solutions.map((solution) => (
             <article
               key={solution.number}
               className="grid gap-5 py-8 sm:py-10 lg:grid-cols-[64px_minmax(0,1fr)_176px] lg:items-center lg:gap-8 lg:py-10"
             >
-              <span className="font-mono text-xs text-[#2563eb]">
+              <span className="font-mono text-xs text-brand">
                 {solution.number}
               </span>
 
@@ -291,7 +291,7 @@ export default function SolutionsSection() {
                   {solution.category}
                 </p>
 
-                <h3 className="max-w-2xl text-xl font-medium leading-snug tracking-[-0.035em] text-[#101828] sm:text-2xl lg:text-[28px]">
+                <h3 className="max-w-2xl text-xl font-medium leading-snug tracking-[-0.035em] text-ink sm:text-2xl lg:text-[28px]">
                   {solution.title}
                 </h3>
 
@@ -307,7 +307,7 @@ export default function SolutionsSection() {
                     >
                       <Check
                         aria-hidden="true"
-                        className="mt-0.5 size-3.5 shrink-0 text-[#2563eb]"
+                        className="mt-0.5 size-3.5 shrink-0 text-brand"
                       />
 
                       <span>{outcome}</span>
@@ -328,9 +328,9 @@ export default function SolutionsSection() {
         </div>
 
         {/* Transition to services */}
-        <div className="mt-5 flex flex-col gap-5 border-t border-[#101828]/15 pt-8 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-5 flex flex-col gap-5 border-t border-ink/15 pt-8 sm:flex-row sm:items-center sm:justify-between">
           <div className="max-w-xl">
-            <p className="text-base font-medium tracking-tight text-[#101828] sm:text-lg">
+            <p className="text-base font-medium tracking-tight text-ink sm:text-lg">
               Every business is different. Your solution should be, too.
             </p>
 
@@ -342,7 +342,7 @@ export default function SolutionsSection() {
 
           <Link
             href="/contact"
-            className="group inline-flex min-h-11 shrink-0 items-center gap-2 text-sm font-medium text-[#101828] outline-none transition-colors hover:text-[#2563eb] focus-visible:rounded-sm focus-visible:ring-2 focus-visible:ring-[#2563eb] focus-visible:ring-offset-4 focus-visible:ring-offset-[#f7f6f2]"
+            className="group inline-flex min-h-11 shrink-0 items-center gap-2 text-sm font-medium text-ink outline-none transition-colors hover:text-brand focus-visible:rounded-sm focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-4 focus-visible:ring-offset-[#f7f6f2]"
           >
             Let&apos;s discuss your goals
 

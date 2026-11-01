@@ -54,7 +54,7 @@ function ApproachVisual() {
     >
       <div
         aria-hidden="true"
-        className="absolute inset-0 opacity-30 [background-image:linear-gradient(rgba(255,255,255,0.07)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.07)_1px,transparent_1px)] [background-size:28px_28px]"
+        className="absolute inset-0 opacity-30 bg-[linear-gradient(rgba(255,255,255,0.07)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.07)_1px,transparent_1px)] bg-size-[28px_28px]"
       />
 
       <div className="relative">
@@ -71,7 +71,7 @@ function ApproachVisual() {
           </span>
         </div>
 
-        <div className="relative mx-auto my-9 flex min-h-[210px] max-w-[360px] items-center justify-center sm:my-12 sm:min-h-[245px]">
+        <div className="relative mx-auto my-9 flex min-h-52.5 max-w-90 items-center justify-center sm:my-12 sm:min-h-61.25">
           {/* Connection lines */}
           <svg
             aria-hidden="true"
@@ -94,7 +94,7 @@ function ApproachVisual() {
           </svg>
 
           {/* Central point */}
-          <div className="relative z-10 flex size-24 flex-col items-center justify-center border border-[#8FAEFF]/60 bg-[#2563EB] shadow-[0_0_55px_rgba(37,99,235,0.2)] sm:size-28">
+          <div className="relative z-10 flex size-24 flex-col items-center justify-center border border-[#8FAEFF]/60 bg-brand shadow-[0_0_55px_rgba(37,99,235,0.2)] sm:size-28">
             <Check aria-hidden="true" className="mb-1 size-5" />
             <span className="text-[10px] font-semibold tracking-wide">
               Right solution
@@ -152,7 +152,7 @@ export default function OurApproach() {
   return (
     <section
       aria-labelledby="our-approach-heading"
-      className="bg-[#F7F6F2] text-[#101828]"
+      className="bg-[#F7F6F2] text-ink"
     >
       <div className="mx-auto max-w-7xl px-5 py-24 sm:px-8 sm:py-28 lg:px-12 lg:py-32">
         {/* Editorial introduction */}
@@ -161,14 +161,14 @@ export default function OurApproach() {
             <div className="flex items-center gap-3">
               <span
                 aria-hidden="true"
-                className="h-px w-8 bg-[#2563EB]"
+                className="h-px w-8 bg-brand"
               />
-              <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#101828]/55">
+              <p className="text-xs font-medium uppercase tracking-[0.2em] text-ink/55">
                 Our approach
               </p>
             </div>
 
-            <p className="mt-5 max-w-xs text-sm leading-6 text-[#101828]/50">
+            <p className="mt-5 max-w-xs text-sm leading-6 text-ink/50">
               Business understanding, useful design, and technology chosen
               for a reason.
             </p>
@@ -180,10 +180,10 @@ export default function OurApproach() {
               className="max-w-4xl text-3xl font-medium leading-[1.12] tracking-[-0.045em] sm:text-4xl md:text-5xl lg:text-6xl"
             >
               Good digital experiences start with{" "}
-              <span className="text-[#2563EB]">understanding.</span>
+              <span className="text-brand">understanding.</span>
             </h2>
 
-            <p className="mt-6 max-w-2xl text-base leading-7 text-[#101828]/65 sm:text-lg sm:leading-8">
+            <p className="mt-6 max-w-2xl text-base leading-7 text-ink/65 sm:text-lg sm:leading-8">
               The right solution isn&apos;t simply the one that looks
               impressive or uses the latest technology. It&apos;s the one
               that makes sense for your business and the people you serve.
@@ -193,36 +193,36 @@ export default function OurApproach() {
 
         {/* Principles and visual */}
         <div className="mt-16 grid gap-12 lg:mt-20 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
-          <div className="border-t border-[#101828]/15">
+          <div className="border-t border-ink/15">
             {principles.map((principle) => {
               const Icon = principle.icon;
 
               return (
                 <article
                   key={principle.number}
-                  className="group border-b border-[#101828]/15 py-6 sm:py-7"
+                  className="group border-b border-ink/15 py-6 sm:py-7"
                 >
                   <div className="flex items-start gap-4 sm:gap-6">
-                    <span className="pt-1 text-xs tabular-nums text-[#2563EB]">
+                    <span className="pt-1 text-xs tabular-nums text-brand">
                       {principle.number}
                     </span>
 
                     <div className="min-w-0 flex-1">
                       <div className="flex flex-wrap items-center justify-between gap-3">
-                        <h3 className="text-lg font-medium tracking-tight text-[#101828] transition-colors duration-200 group-hover:text-[#2563EB] sm:text-xl">
+                        <h3 className="text-lg font-medium tracking-tight text-ink transition-colors duration-200 group-hover:text-brand sm:text-xl">
                           {principle.title}
                         </h3>
 
-                        <span className="flex size-8 shrink-0 items-center justify-center border border-[#101828]/10 text-[#101828]/50 transition-colors duration-200 group-hover:border-[#2563EB]/30 group-hover:text-[#2563EB]">
+                        <span className="flex size-8 shrink-0 items-center justify-center border border-ink/10 text-ink/50 transition-colors duration-200 group-hover:border-brand/30 group-hover:text-brand">
                           <Icon aria-hidden="true" className="size-4" />
                         </span>
                       </div>
 
-                      <p className="mt-3 max-w-xl text-sm leading-7 text-[#101828]/60 sm:text-base">
+                      <p className="mt-3 max-w-xl text-sm leading-7 text-ink/60 sm:text-base">
                         {principle.description}
                       </p>
 
-                      <p className="mt-4 text-[10px] font-medium uppercase tracking-[0.15em] text-[#101828]/40">
+                      <p className="mt-4 text-[10px] font-medium uppercase tracking-[0.15em] text-ink/40">
                         {principle.label}
                       </p>
                     </div>
@@ -235,15 +235,15 @@ export default function OurApproach() {
           <div className="lg:pt-2">
             <ApproachVisual />
 
-            <div className="mt-6 flex items-start gap-4 border-l-2 border-[#2563EB] pl-5 sm:pl-6">
+            <div className="mt-6 flex items-start gap-4 border-l-2 border-brand pl-5 sm:pl-6">
               <div>
-                <p className="text-xl font-medium leading-snug tracking-tight text-[#101828] sm:text-2xl">
+                <p className="text-xl font-medium leading-snug tracking-tight text-ink sm:text-2xl">
                   The goal isn&apos;t to build more.
                   <br />
                   It&apos;s to build what matters.
                 </p>
 
-                <p className="mt-3 max-w-md text-sm leading-6 text-[#101828]/55">
+                <p className="mt-3 max-w-md text-sm leading-6 text-ink/55">
                   Every decision should serve a purpose—from the first
                   conversation to the details people interact with every day.
                 </p>
@@ -253,14 +253,14 @@ export default function OurApproach() {
         </div>
 
         {/* Transition to the next section */}
-        <div className="mt-16 flex flex-col gap-4 border-t border-[#101828]/15 pt-6 sm:mt-20 sm:flex-row sm:items-center sm:justify-between">
-          <p className="max-w-xl text-sm leading-6 text-[#101828]/60">
+        <div className="mt-16 flex flex-col gap-4 border-t border-ink/15 pt-6 sm:mt-20 sm:flex-row sm:items-center sm:justify-between">
+          <p className="max-w-xl text-sm leading-6 text-ink/60">
             A considered approach makes the process clearer, too.
           </p>
 
           <Link
             href="/contact"
-            className="group inline-flex min-h-11 w-fit items-center gap-3 text-sm font-medium text-[#101828] transition-colors hover:text-[#2563EB] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#101828]"
+            className="group inline-flex min-h-11 w-fit items-center gap-3 text-sm font-medium text-ink transition-colors hover:text-brand focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink"
           >
             Tell us what you&apos;re working on
             <ArrowUpRight
