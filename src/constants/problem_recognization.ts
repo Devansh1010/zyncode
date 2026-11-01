@@ -7,6 +7,7 @@ description:
 "Your business offers something worth choosing, but your website looks and sounds like many others. Visitors may leave without understanding why they should choose you.",
 takeaway: "LET THEM SEE YOUR VALUE",
 visual: "positioning",
+link: "/services/business-websites"
 },
 {
 number: "02",
@@ -16,6 +17,7 @@ description:
 "Visitors may be interested in your services but struggle to find the information they need, build confidence in your business, or figure out what to do next.",
 takeaway: "MAKE IT EASY TO SAY YES",
 visual: "conversion",
+link: "/services/website-redesign"
 },
 {
 number: "03",
@@ -25,6 +27,7 @@ description:
 "Your services, experience, or ambitions have moved forward, but your website still tells an older story. Your digital presence should reflect the business you've built today.",
 takeaway: "SHOW HOW FAR YOU'VE COME",
 visual: "growth",
+link: "/services/business-websites"
 },
 {
 number: "04",
@@ -34,6 +37,7 @@ description:
 "Information is scattered across spreadsheets, messages, and disconnected tools. A tailored digital application could bring the right parts of your workflow together.",
 takeaway: "STREAMLINE YOUR OPERATIONS",
 visual: "workflow",
+link: "/services/custom-web-applications"
 },
 ] as const;
 

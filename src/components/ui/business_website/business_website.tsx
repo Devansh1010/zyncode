@@ -19,7 +19,7 @@ export function BusinessWebsiteHero() {
         <div>
           <SectionLabel>Business website development</SectionLabel>
 
-          <h1 className="max-w-3xl text-4xl font-semibold leading-[1.08] tracking-tighter text-ink sm:text-5xl lg:text-6xl">
+          <h1 className="max-w-3xl text-[clamp(43px,8vw,84px)] font-medium leading-[0.99] tracking-[-0.065em] text-ink text-balance">
             Your business deserves a website that does more than look good.
           </h1>
 
@@ -308,8 +308,8 @@ export function BusinessWebsiteFaqs() {
   );
 }
 
-const CONTACT_EMAIL = "hello@zyncode.in";
-const CONTACT_PHONE = "+91 XXXXXXXXXX";
+const CONTACT_EMAIL = "contact.zyncode@gmail.com";
+const CONTACT_PHONE = "+91 7984981183";
 
 export function BusinessWebsiteFinalCta() {
   return (

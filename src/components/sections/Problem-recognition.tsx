@@ -65,7 +65,9 @@ export default function ProblemRecognitionSection({
 
                   {/* Left Accent Border replaces blue arrows */}
                   <div className="mt-6 border-l-2 border-brand/60 pl-4">
-                    <ProblemTakeaway>
+                    <ProblemTakeaway
+                    url={problem.link}
+                    >
                       {problem.takeaway}
                     </ProblemTakeaway>
                   </div>
@@ -85,7 +87,7 @@ export default function ProblemRecognitionSection({
 
       {/* Conversion Transition Block */}
       <div className="mx-auto max-w-7xl px-5 pt-16 sm:px-8 lg:px-12 lg:pt-20">
-        <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end lg:gap-12">
+        <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end  lg:gap-12">
           {/* Copy & Value Proposition */}
           <div className="max-w-2xl">
             <span className="inline-flex items-center gap-2 text-[11px] font-medium uppercase tracking-[0.16em] text-brand">

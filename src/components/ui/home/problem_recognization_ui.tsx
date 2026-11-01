@@ -1,5 +1,6 @@
 import { problems } from "@/constants/problem_recognization";
 import { ArrowRight, Check, CircleHelp, FileText, LayoutGrid, Mail, MessageCircle, Search, Workflow } from "lucide-react";
+import Link from "next/link";
 import { ReactNode } from "react";
 
 type VisualProps = {
@@ -532,11 +533,20 @@ export function ProblemHeading({
   );
 }
 
-export function ProblemTakeaway({ children }: { children: ReactNode }) {
+export function ProblemTakeaway({
+  children,
+  url
+}: {
+  children: ReactNode,
+  url: string
+}) {
   return (<div className="mt-6 inline-flex items-center gap-3 text-[9px] font-semibold uppercase tracking-[0.13em] text-brand sm:mt-7"> <ArrowRight className="h-3.5 w-3.5 shrink-0" />
 
-
-    <span>{children}</span>
+    <Link
+    href={url}
+    >
+      <span>{children}</span>
+    </Link>
   </div>
 
 
